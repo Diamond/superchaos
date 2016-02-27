@@ -1,20 +1,6 @@
 # Superchaos
 
-**TODO: Add description**
+Superchaos can be invoked via two main mix tasks:
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add superchaos to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:superchaos, "~> 0.0.1"}]
-        end
-
-  2. Ensure superchaos is started before your application:
-
-        def application do
-          [applications: [:superchaos]]
-        end
-
+**mix chaos.generate** - Generates the seed sample data to work with (providers, members, and consults) by generating the event stream
+**mix chaos.simulate** - Begins simulating realtime queue manipulation via multiple Elixir async tasks
